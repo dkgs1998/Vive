@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vive</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+        <!-- Navigation & Logo-->
+        <div class="mainmenu-wrapper">
+	        <div class="container">
+	        	<div class="menuextras">
+					<div class="extras">
+						<ul>
+							<li>
+									<a href="credits.html">You Have <strong>0</strong> New Messages</a>
+							</li>
+							<li>
+									<a href="credits.html">Coins: <strong>6</strong></a>
+							</li>
+			        		<li><a href="page-login.html"> <strong><%= @user.name %></strong></a></li>
+			        	</ul>
+					</div>
+		        </div>
+		        <nav id="mainmenu" class="mainmenu">
+					<ul>
+						<li class="logo-wrapper"><a href="index.html">
+						<% #image_tag("logo.png", :alt => "Logo", :id => "logo") %>
+						Vive
+						</a></li>
+						<li class="active">
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="credits.html">Example</a>
+						</li>
+						<li>
+							<a href="credits.html">Example</a>
+						</li>
+						<li>
+							<a href="credits.html">Example</a>
+						</li>
+						<li>
+							<a href="credits.html">Example</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="section section-breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Hello Name</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+<%= yield %>
+
+</body>
+</html>

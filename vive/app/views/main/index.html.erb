@@ -1,0 +1,50 @@
+
+       
+ 
+        <div class="section">
+	    	<div class="container">
+	    		<div class="row">
+	    			<h2>Scheduled Lessons: </h2>
+
+	    			<div class="col-md-12">
+						
+	    				<table class="events-list">
+	    					<tr>
+	    						<td>
+	    							<div class="event-date">
+	    							<h4>Time</h4>
+
+	    							</div>	
+	    						</td>
+	    					</tr>
+
+	    					<% for lesson in @student_lessons %>
+	    					<tr>
+	    						<td>
+	    							
+
+	    							<div class="event-date">
+	    								<div class="event-day">16</div>
+	    								<div class="event-month">MAR</div>
+	    							<h4>16:00</h4>
+	    							</div>	
+	    						</td>
+
+	    						<td>
+
+	    							Donec hendrerit massa metus, a ultrices elit iaculis eu. Pellentesque ullamcorper augue lacus.
+	    						</td>
+	    						<td class="event-venue hidden-xs"><i class="icon-map-marker"></i> <%= lesson.tutor.name %></td>
+	    						<td class="event-price hidden-xs">$50.00</td>
+	    						<td><a href="#" class="btn btn-grey btn-sm event-more">Read More</a></td>
+	    					</tr>
+
+
+	    					<% end %>
+
+
+	    				</table>
+	    			</div>
+	    		</div>
+			</div>
+		</div>
